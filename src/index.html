@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/scripts.js"></script>
+
+    <div class="app-wrapper">
+        <div class="wrapper">
+            <ul class="flex cards" id="js-list"></ul>
+        </div>
+
+        <div class="formWrapper">
+            <h1>Add Post</h1>
+
+            <form id="addEntryForm">
+                <label for="imageLink">Image Link:</label>
+                <input type="text" id="imgLink" name="imageLink" required>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <button id="addEntry" class="button green" type="submit">Add Entry</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="editModal">
+        <div class="modal-contents">
+            <h2>Edit Post</h2>
+            <label for="editTitle">Title:</label>
+            <input type="text" id="editTitle">
+
+            <label for="editDescription">Description:</label>
+            <textarea id="editDescription" name="editDescription" required></textarea>
+
+            <label for="editAuthor">Author:</label>
+            <input type="text" id="editAuthor" name="editAuthor" required>
+
+            <label for="editImg">Image Link:</label>
+            <input type="text" id="editImg" name="editImg" required>
+        </div>
+        <div class="buttons">
+            <button class="button green" id="saveEdit">Save</button>
+            <button class="button red" id="cancelEdit">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

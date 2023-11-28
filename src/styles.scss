@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#crud {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.app-wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.formWrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: calc(100% - 16px); /* Adjust as needed */
+  margin-bottom: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+  min-width: 80px;
+  flex-grow: 1;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.red {
+  background-color: rgb(197, 73, 73);
+}
+
+.yellow {
+  background-color: rgb(192, 171, 52);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards li {
+  border: 2px solid black;
+  border-radius:5px;
+  background-color: lightgray;
+  color: #fff;
+  flex: 1 1 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh; /* Ensure parent takes at least the full viewport height */
+}
+
+.card-bottom {
+  margin-top: auto;
+}
+
+.cards h2 {
+  background-color: gray;
+  margin: 0;
+  padding: 10px;
+}
+
+.cards p {
+  padding: 10px;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.flex li {
+  margin: 10px;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 400px;
+}
+
+.modal-contents {
+  padding: 20px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
